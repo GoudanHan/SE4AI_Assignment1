@@ -11,7 +11,7 @@ def get_file_contents(filename):
     except FileNotFoundError:
         print("'%s' file not found" % filename)
 
-API_TOKEN = get_file_contents('/Users/goudanhan/Downloads/albumy/apikey_caption.txt')
+API_TOKEN = get_file_contents('../apikey_caption.txt')
 API_URL = "https://api-inference.huggingface.co/models/nlpconnect/vit-gpt2-image-captioning"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
