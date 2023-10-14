@@ -16,7 +16,7 @@ def get_file_contents(filename):
         print("'%s' file not found" % filename)
 
 
-API_TOKEN = get_file_contents('/Users/goudanhan/Downloads/albumy/apikey_tagging.txt')
+API_TOKEN = get_file_contents('../apikey_tagging.txt')
 API_URL = "https://api-inference.huggingface.co/models/facebook/detr-resnet-50"
 headers = {"Authorization": API_TOKEN}
 
