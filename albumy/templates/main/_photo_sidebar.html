@@ -56,8 +56,8 @@
                 {% if photo.tags %}
                     {% for tag in photo.tags %}
                         <a class="badge badge-light"
-                           href="{{ url_for('.show_tag', tag_id=tag.id) }}" target="_blank"><span
-                                class="oi oi-tag"></span> {{ tag.name }}</a>
+                            href="{{ url_for('.show_tag', tag_id=tag.id) }}" target="_blank"><span
+                            class="oi oi-tag"></span> {{ tag.name }}</a>
                     {% endfor %}
                 {% endif %}
                 {% if current_user == photo.author %}
